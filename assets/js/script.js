@@ -22,10 +22,10 @@ function loadLocalStorage(){
   if(mode){
     if(mode == 'darkMode'){
       document.body.classList.add('dark-mode');
-    } else{
-      if(window.matchMedia(('(prefers-color-scheme : dark)')).matches){
-        document.body.classList.add('dark-mode');
-      }
+    }
+  } else{
+    if(window.matchMedia(('(prefers-color-scheme : dark)')).matches){
+      document.body.classList.add('dark-mode');
     }
   }
 }
