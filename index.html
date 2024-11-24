@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3ed2e8cef0.js" crossorigin="anonymous"></script>
+  <title>Github User Search</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body class="no-content">
+  <div class="container">
+    <header>
+      <div class="logo">
+        <p>devfinder</p>
+      </div>
+      <div class="mode-switch">
+        <div class="dark-mode-btn">
+          <p>DARK</p>
+          <i class="fa-solid fa-moon"></i>
+        </div>
+        <div class="light-mode-btn">
+          <p>LIGHT</p>
+          <i class="fa-regular fa-sun"></i>
+        </div>
+      </div>
+    </header>
+    <section class="search-input">
+      <form id="searchInputForm">
+        <input id="searchInput" type="text" placeholder="Search GitHub username…" autocomplete="off">
+        <img class="search-icon-img" src="assets/images/search-icon.svg">
+        <div class="search-input__wrapper">
+          <span id="errorText"></span>
+          <button id="searchBtn">Search</button>
+        </div>
+      </form>
+    </section>
+    <section class="user">
+      <div class="user-info-container">
+        <div id="avatar">
+        </div>
+        <div id="userInfoContainer" class="user-info-container__wrapper">
+        </div>
+      </div>
+      <div id="userBio" class="user-bio">
+      </div>
+      <div id="followersInfoContainer" class="user-followers-info-grid-container">
+      </div>
+      <div id="userContactContainer" class="user-contact-grid-container">
+      </div>
+    </section>
+    <section class="no-content-screen">
+      <img src="assets/images/avatar.svg">
+      <p>Search a GitHub username to get started</p>
+    </section>
+  </div>
+</body>
+</html>
